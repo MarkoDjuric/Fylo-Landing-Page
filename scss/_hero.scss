@@ -106,11 +106,15 @@
             max-width: 627px;
             
             p {
-              font-size: 1.063rem;
+              font-size: 0.95rem;
               width: 545px;
               line-height: 24px;
               text-align: left;
-            }
+              
+                @include breakpoint(xlarge){
+                  font-size: 1.1rem;
+                }
+            } 
     
           }
       
