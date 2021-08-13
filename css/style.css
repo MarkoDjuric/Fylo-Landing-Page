@@ -62,7 +62,7 @@ p {
   cursor: pointer;
   text-decoration: none;
   padding: 12px 113px;
-  font-size: 14px;
+  font-size: 0.875rem;
   background-color: #3065f8;
   color: #fff;
   border-radius: 4px; }
@@ -93,7 +93,8 @@ header .nav {
   @media screen and (min-width: 1146px) {
     header .nav {
       padding-left: 80px;
-      padding-right: 80px; } }
+      padding-right: 80px; 
+      grid-gap: 40px;} }
 
 header img {
   width: 4.5em; }
@@ -110,6 +111,7 @@ header a {
 header a:hover {
   text-decoration: underline; }
 
+
 .hero .grid {
   display: flex;
   max-width: 1340px;
@@ -120,11 +122,22 @@ header a:hover {
   padding-bottom: 90px;
   text-align: center;
   color: #070439; }
+  @media screen and (min-width: 900px) {
+    .hero .grid {
+      padding-right: 52px;
+      padding-left: 52px;
+      flex-direction: row;
+      justify-content: space-between; }
+      .hero .grid .about {
+        text-align: left;
+        min-width: 50%; }
+      .hero .grid .image {
+        order: 1; } }
   .hero .grid h1 {
     font-size: 1.5rem;
-    font-family: "Open Sans";
+    font-family: Open Sans;
     font-weight: bold; }
-  @media screen and (min-width: 900px) {
+    @media screen and (min-width: 900px) {
       .hero .grid h1 {
         font-size: 1.7rem; } }
   @media screen and (min-width: 1146px) {
@@ -137,22 +150,25 @@ header a:hover {
       padding-right: 80px; }
       .hero .grid h1 {
         font-size: 2.2rem; } }
- @media screen and (min-width: 1146px) and (min-width: 1399px) {
+    @media screen and (min-width: 1146px) and (min-width: 1399px) {
       .hero .grid h1 {
         font-size: 2.5rem; } }
   .hero .grid .about {
     max-width: 320px;
     order: 1; }
     .hero .grid .about p {
-      width: 296px;
+      min-width: 296px;
       text-align: center;
       font-size: 0.875rem; }
       @media screen and (min-width: 900px) {
         .hero .grid .about p {
           text-align: left; } }
   .hero .grid img {
-    max-width: 100%;
-    width: 400px; }
+    max-width: 400px; }
+    @media screen and (min-width: 900px) {
+      .hero .grid img {
+        max-width: 100%;
+        width: 400px; } }
   @media screen and (min-width: 1146px) {
     .hero .grid img {
       width: 100%;
@@ -164,7 +180,7 @@ header a:hover {
     .hero .grid .about {
       max-width: 627px; }
       .hero .grid .about p {
-        font-size: 0.95rem;;
+        font-size: 0.95rem;
         width: 545px;
         line-height: 24px;
         text-align: left; } }
@@ -428,7 +444,7 @@ header a:hover {
     display: flex;
     flex-direction: column;
     padding-top: 65px; }
-    @media screen and (min-width: 699px) {
+    @media screen and (min-width: 900px) {
       .footer__grid {
         padding-left: 80px;
         padding-right: 80px;
