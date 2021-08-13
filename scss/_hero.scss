@@ -14,6 +14,24 @@
       padding-bottom: 90px;
       text-align: center;
       color:$footerBg;
+    
+            @include breakpoint(medium) {
+        padding-right: 52px;
+        padding-left: 52px;
+        flex-direction: row;
+        justify-content: space-between;
+
+
+        .about {
+          text-align: left;
+          min-width: 50%;
+       }
+        .image {  
+          // width: 640px; 
+          order: 1;
+         
+        }
+      }
 
       h1 {
         font-size: 1.5rem;
