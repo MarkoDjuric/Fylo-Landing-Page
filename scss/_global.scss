@@ -59,14 +59,18 @@ p {
 
 #mail {
     width: 100%;
-  
     width: 304px;
     height: 40px;
     font-size: 14px;
     margin-bottom: 16px;
     // padding: 14px 12px 21px 181px;
     border-radius: 4px;
-
+    
+    @include breakpoint(medium) {
+        width: 15.5rem;
+        height: 37px;
+        
+      }
 
 
     @include breakpoint(large) {
@@ -99,7 +103,6 @@ p {
 
     }
     
-
 }
        
      
@@ -109,7 +112,6 @@ p {
         color: white;
         
     }
-    
 }
    
 
