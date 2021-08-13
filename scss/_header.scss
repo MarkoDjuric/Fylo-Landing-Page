@@ -7,9 +7,13 @@
          grid-gap: 25px;
          color: $headLinks;
          padding: 24px 25px 98px 25px;
+     
+         @include breakpoint(medium) {
+            padding-left: 50px;
+            padding-right: 50px;
+         }
         
         @include breakpoint(large) {
-          
             padding-left: 80px;
             padding-right: 80px;
         }
