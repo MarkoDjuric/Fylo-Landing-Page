@@ -90,10 +90,16 @@ p {
     // width: 304px;
     // height: 40px;
     padding: 12px 113px;
-    font-size: 14px;
+    font-size: 0.875rem;
     background-color:$btn;
     color: #fff;
     border-radius: 4px;
+    
+        @include breakpoint(medium) {
+        padding: 10px 30px;
+    
+        
+      }
 
 
     @include breakpoint(large) {
