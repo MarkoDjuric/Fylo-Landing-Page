@@ -12,16 +12,23 @@
         color:$footerBg;
         margin-bottom:111px;
         
+        @include breakpoint(medium) {
+            padding-right: 52px;
+            padding-left: 52px;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        
         @include breakpoint(large) {
             flex-direction: row;
-            // justify-content: space-between;
-            align-items: center;
+            justify-content: space-between;
+          
             text-align: left;
             padding-top: 70px;
             padding-left: 80px;
             padding-right: 80px;
             margin-bottom:111px;
-            gap: 340px;
+            gap: 15rem;
         }
     }
             
