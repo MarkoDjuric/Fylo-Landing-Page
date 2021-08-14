@@ -76,8 +76,6 @@ p {
       }
 }
 
-
-
 .button {
     border: none;
     cursor: pointer;
@@ -92,16 +90,13 @@ p {
     
         @include breakpoint(medium) {
         padding: 10px 30px;
-    
-        
-      }
+     }
 
 
     @include breakpoint(large) {
         // width: 200px;
         // height: 45px;
         padding: 15px 61px;
-
     }
     
 }
