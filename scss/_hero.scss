@@ -95,7 +95,19 @@
       }
         
       img {
-        width:320px;
+                 max-width: 19rem;
+          width: 100%;
+         
+          @include breakpoint(small) {
+            width: 100%;
+            max-width:450px;
+         }
+  
+          @include breakpoint(medium) {
+            max-width: 21.25rem;
+            width: 100%;
+          }
+        }
       }
    
       @include breakpoint(large) {
