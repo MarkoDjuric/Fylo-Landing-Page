@@ -85,6 +85,11 @@
             margin-top: 40px;
             color: $footerBg;
             text-align: left;
+            transition:width 2s, height 2s, transform 2s;
+           
+            @include breakpoint(medium) {
+                margin-left: 0;
+            }
 
             .quote__image {
                 width: 100%;
@@ -140,19 +145,39 @@
                 }
             }
         }
+    
+    
+         .quote:hover {
+            transform: rotate(180deg);
+           }
              
         .text {
             max-width: 320px;
             order:2;
+            
+            @include breakpoint(medium) {
+                // max-width: ;
+                order: 1;
+                text-align: left;
+                max-width:420px;
+            }
     
             p {
                 font-size: 0.875rem;
                 line-height: 21px;
+                
+                @include breakpoint(medium) {
+                   font-size: 0.9rem;
+                }
             }
     
             h1 {
                 font-size: 1rem;
                 margin-bottom: 1.5rem;
+                
+               @include breakpoint(medium) {
+                  font-size: 1.7rem;
+               }
             
             }    
           
@@ -161,9 +186,9 @@
                
     
                 h1 {
-                     width:660px;
+                     width:649px;
                
-                     font-size: 2.5rem;
+                     font-size: 2.188rem;
                      margin-bottom: 2.375rem;
                  }
                 
@@ -238,14 +263,8 @@
             height: 60px;
             width: 100%;
         }           
-        
-
-    } 
+} 
     
-                   
-           
-              
-
     .button:hover {
         background-color: $btnHover;
       }
