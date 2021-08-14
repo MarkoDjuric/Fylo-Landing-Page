@@ -95,8 +95,8 @@
       }
         
       img {
-                 max-width: 19rem;
-          width: 100%;
+            max-width: 19rem;
+            width: 100%;
          
           @include breakpoint(small) {
             width: 100%;
@@ -111,29 +111,28 @@
       }
    
       @include breakpoint(large) {
+          .image {
+                width: 640px;
+                order: 1;
 
-        img {
-          width: 100%;
-          max-width: 640px; 
-          margin-top: 50px;
-          }
-       
-          .image {  
-            width: 640px; 
-            order: 1;
-          }
-           
+          img {
+            width: 100%;
+            max-width: 640px; 
+            margin-top: 50px;
+            }
+        }
           .about {
             max-width: 627px;
             
             p {
-              font-size: 0.95rem;
-              width: 545px;
+              font-size: 1.063rem;
+              width: 585px;
               line-height: 24px;
               text-align: left;
+               letter-spacing: 0.53px;
               
                 @include breakpoint(xlarge){
-                  font-size: 1.1rem;
+                  font-size: 1.063rem;
                 }
             } 
     
