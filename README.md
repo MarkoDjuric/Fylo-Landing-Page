@@ -9,5 +9,6 @@ This repo is about testing and deploys my first SCSS project on github pages and
 * Mobile First approach - works on every device.
 * SCSS
 * CSS Flexbox.
+* CSS Grid.
 * Pixel perfect.
 * CSS Animations: hover states and rotating elements.
