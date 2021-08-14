@@ -6,7 +6,7 @@ This repo is about testing and deploys my first SCSS project on github pages and
 
 ## Overview
 
-* Mobile First approach - works on every device.
+* :white_check_mark:Mobile First approach - works on every device.
 * SCSS
 * CSS Flexbox.
 * CSS Grid.
