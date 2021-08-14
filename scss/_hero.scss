@@ -1,9 +1,6 @@
 .hero {
 
                
-
-
-
   .grid {
       display: flex;
       max-width: 1340px;
@@ -81,8 +78,20 @@
             
               @include breakpoint(medium) {
                 text-align: left;
+                font-size: 1rem;
               }
           }
+      }
+    
+    .image {
+       width: 19rem;
+      //  text-align: left;
+      @include breakpoint(small) {
+        width: 100%;
+        max-width:450px;
+     }
+      @include breakpoint(medium) {
+        min-width: 21.25rem;
       }
         
       img {
