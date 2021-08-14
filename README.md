@@ -6,7 +6,7 @@ This repo is about testing and deploys my first SCSS project on github pages and
 
 ## Overview
 
-* :white_check_mark:Mobile First approach - works on every device.
+:ballot_box_with_check: Mobile First approach - works on every device.
 * SCSS
 * CSS Flexbox.
 * CSS Grid.
