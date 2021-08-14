@@ -4,7 +4,7 @@ This repo is about testing and deploys my first SCSS project on github pages and
 
 ![GitHub Logo](/images/logo.png)
 Format: ![Alt Text](url)
-
+![Screenshot](desktop-preview.jpg)
 ## Overview
 
 * Mobile First approach - works on every device.
