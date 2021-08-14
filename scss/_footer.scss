@@ -108,18 +108,13 @@
     
 }
        
-
 &__logo {
     fill: #FFF;
     cursor: pointer;
 
     @include breakpoint (large) {
      
-    }
-
-
-
-  
+    } 
 }
 
 &__text  {
@@ -141,11 +136,8 @@
         cursor: pointer;
         margin-bottom: 42px;
         
-    }
-   
+    }   
 }
-
-
 
 }
  
