@@ -6,8 +6,8 @@ This repo is about testing and deploys my first SCSS project on github pages and
 
 ## Overview
 
- *Mobile First approach - works on every device.
-*SCSS
+ * Mobile First approach - works on every device.
+* SCSS
 *:ballot_box_with_check: CSS Flexbox.
 *:ballot_box_with_check: CSS Grid.
 *:ballot_box_with_check: Pixel perfect.
