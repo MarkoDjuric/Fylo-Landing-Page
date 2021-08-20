@@ -5,24 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fylo Landing Page</title>
-    <!-- Fonts -->
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Raleway:400,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <!-- external css link -->
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+  <body>
 
-</head>
-<body>
+<!-- HEADER SECTION -->
 
   <header>
     <div class="container nav">
-      <img src="./images/logo.svg" alt="logo" class="logo">
+      <img src="/images/logo.svg" alt="logo" class="logo">
       <a href="#">Features</a>
       <a href="#">Team</a>
       <a href="#">Sign in</a>
     </div>
   </header>
 
+<!-- HERO SECTON -->
+
   <section class="hero">
-    <!-- <div class="container"> -->
     <div class="container grid"> 
       <div class="about">
          <h1 class="hero-title">All your files in one secure location, accessible anywhere.</h1>
@@ -31,20 +34,19 @@
           family, and co-workers.</p>
           <form id="signup-form" action="">
           <input type="email" name="mail" id="mail" placeholder="enter your email" required>
-          <input type="submit" class="button" value="Get Started">
+          <input type="submit" class="button flexbtn" value="Get Started">
           </form>
         </div>
         <div class="image">
-          <img src="./images/illustration-1.svg" alt="illustration">
+          <img src="/images/illustration-1.svg" alt="illustration">
         </div>
     </div> 
 </section>
         
+<!-- PRODUCTIVE SECTION -->
 
-<section class="productive">
-
+<section class="productive"> 
   <div class="container flex">
-
     <div class="text">
       <h1> Stay productive, wherever you are</h1>
       <p>Never let location be an issue when accessing your files. Fylo has you 
@@ -52,44 +54,46 @@
       <p>Securely share files and folders with friends, family and colleagues for 
       live collaboration. No email attachments required!</p>
       <a href="#">See how Fylo works</a>
-
       <div class="quote">
-        <img class="quote__image" src="./images/icon-quotes.svg" alt="">
+        <img class="quote__image" src="/images/icon-quotes.svg" alt="">
         <div class="quote__text">
           <p class="citat">Fylo has improved our team productivity by an order of magnitude. Since 
             making the switch our team has become a well-oiled collaboration machine.</p>
         </div>
         <div class="quote__author">
             <div class="quote__author-image">
-              <img src="./images/avatar-testimonial.jpg" alt="avatar">
+              <img src="/images/avatar-testimonial.jpg" alt="avatar">
             </div>
             <div class="author_name"><p class="name">Kyle Burton</p></div>
             <div class="author_title"><p class="position">Founder & CEO, Huddle</p></div>
         </div>
       </div>
     </div>
-
     <div class="slika">
-      <img class="bakslika" src="./images/illustration-2.svg" alt="people">
+      <img class="bakslika" src="/images/illustration-2.svg" alt="people">
     </div>
   </div>
 </section>
+    
+<!-- CTA SECTION -->
 
 <section class="cta">
-  <div class="container cta__wrapper">
+  <div class="cta__wrapper">
     <div class="cta__text">
-      <h2 class="cta_heading">Get early acces today</h2>
+      <h2 class="cta_heading">Get early access today</h2>
       <p class="cta__paragraph">  It only takes a minute to sign up and our free starter tier is extremely generous. 
         If you have any questions, our support team would be happy to help you.</p>
     </div>
-    <div class="cta__input">
+    <div class="inputwrap">
       <form id="cta__form" class="formflex" action="">
-        <input type="mail" name="mail" id="mail" placeholder="example@fylo.com" required>
+        <input type="mail" name="mail" class="cta_input" placeholder="example@fylo.com" required>
         <input type="submit" class="button" value="Get Started For Free">
         </form>
     </div>
   </div>
 </section>
+
+<!-- FOOTER SECTION -->
 
 <footer class="footer">
   <div class="container footer__grid">
@@ -126,7 +130,8 @@
       </div>
      </div> 
   </footer>
- </body>
+      
+    </body>   
 </html>
         
   
