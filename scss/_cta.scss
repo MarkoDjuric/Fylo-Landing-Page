@@ -1,11 +1,11 @@
 .cta {
-  
-     background-color: $ctaBckgrnd;
+
+    background-color: $ctaBckgrnd;
     
     &__wrapper {
-        max-width: 1328px;
+        max-width: 1360px;
+        margin: 0 auto;
         display: flex;
-        
         flex-direction: column;
         padding-right: 27px;
         padding-left: 27px;
@@ -15,133 +15,190 @@
         padding-bottom: 71px;
         color:#fff;
 
-        @include breakpoint(medium) {
-            flex-direction: row;
-            justify-content: space-between;   
-        }
-
-        @include breakpoint(large) {
-            align-items: center;
-            padding-top: 100px;
-            padding-left: 80px;
-            padding-right: 80px;
-            padding-bottom: 80px;
-        }
-    }
-
-    &__text {
-        width: 280px;
-        text-align: center;
-       
-        @include breakpoint(medium) {
-            width: 400px;
-            text-align: left;
-        }
-
-        @include breakpoint(large){
-            max-width: 533px;
-            text-align: left;
-        }
-            
-        h2 {
-            font-size: 1.125rem;
-            font-family: 'Raleway';
-            line-height: 24px;
-            margin: 0;
-
-            @include breakpoint(large){
-                
-                font-size: 2rem;
-                line-height: 48px;
-                font-weight: bold;
-            }
-        }
-                  
-       p {
-            font-size:0.875rem;
-            line-height: 21px;
-            width: 280px;
-            @include breakpoint(medium){
-                width: 360px;
-            }
-
-            @include breakpoint(large){
-                width: 533px;
-                font-size:1rem;
-                line-height: 24px;
-                letter-spacing: 0.5px;
-            }
-        }
-    }
-
-    &__input{
-     
-        max-width: 240px;
-        &:invalid {
-           border: 1px solid red;
-        }
-        @include breakpoint(medium){
-            max-width: 400px;
-        }
-        @include breakpoint(large){
-            max-width: 480px;
-        }
-    
-        .button {
-            font-size: 0.625rem;
+      .button {
+            font-size: 12px;
             padding:11px 70px 9px 70px; 
             width: 240px;
             box-shadow: 20px 20px 20px rgb(24, 16, 41);
             transition: all .2s;
+            align-self: flex-start;
+            height: 32px;
+            margin-top: 16.09px;
 
-            @include breakpoint(medium){
-                font-size: 0.7rem;
-                padding: 9px 16px;
-                width: 200px;
+            @include breakpoint(small) {
+                font-size: 13px;
+                height: 40px;
+                width: 300px;
             }
-            &:hover {
-                background-color:$btnHover;
-            }
+      }
 
-            @include breakpoint(large){
-                padding:16px 22px; 
-                font-size:0.875rem;
-                width: 200px;
+    p {
+        max-width: 280px;
+        font-size: 14px;
+        font-weight: normal;
+
+        @include breakpoint(small) {
+    
+            max-width: 300px;
+        }
+    }  
+
+                .formflex {
+                    display: flex;
+                    flex-direction: column;
+                }
+                    
+
+    .cta_input {
+        height: 32px;
+        min-width: 240px;
+        margin-bottom: 8px;
+        border:none;
+        border-radius: 3px;
+        font-size: 12px;
+        box-shadow: 20px 20px 20px rgb(24, 16, 41);
+
+        @include breakpoint(small) {
+            font-size: 13px;
+            height: 40px;
+            width: 300px;
+        }
+    }
+ 
+    .cta__text {
+
+            p {
+
+                @include breakpoint(medium) {
+                    max-width: 400px;
+                    text-align: left;
+                    font-size: 15px;
+                }
             }
         }
+         
+        @include breakpoint(medium) {
+            flex-direction: row;
+            text-align: left;
+            justify-content: space-between;
+            padding-left: 52px;
+            padding-right:110px;
+            gap: 10%;
 
-        #mail {
+            .cta__text {
+                width:400px;
+            }
+                
+            .formflex {
+        
+                padding-right: 40px;
+                padding-top: 12px;
+               
+                .cta_input {
+                   height: 40px;
+                   margin-bottom: 15px;
+                   min-width: 382px;
+                   border:none;
+                   border-radius: 3px;
+                }
+
+                .button {
+                    align-self: unset;
+                    width: 200px;
+                    height: 48px;
+                    padding: 13px;
+                }
+           }
+       }
+
+       @include breakpoint(large) {
+
+            padding: 96px 40px 81px 40px;
+
+            .inputwrap {
+                  
+                flex-basis: 50%;
+                max-width: unset;
+                padding-left: 170px;
+            }
+            
+            .formflex {
+                display: flex;
+                flex-direction: column;
+                margin: 0 auto;
+                padding-right: 40px;
+                padding-top: 1px;
+    
+                    .cta_input {
+                        height: 48px;
+                        margin-bottom: 15px;
+                        min-width: 482px;
+                        border: none;
+                        border-radius: 3px;
+                    }
+
+                    .button {
+                        align-self: unset;
+                        padding: 16px 33px 16px 33px;
+                        font-size: 14px;
+                        margin-top: 1.09px;
+                        
+                    }
+            }
+
+
+        @include breakpoint(large) {
           
-            font-size: 0.625rem;
-            padding:11px 102px 9px 8px; 
-            height: 32px;
-            width: 240px;
-            box-shadow: 20px 20px 20px rgb(24, 16, 41);
+            flex-direction: row;
 
-            @include breakpoint(medium){
-                width: 360px;
+            .cta__text {
+                
+              flex-basis: 50%;
+
+            h2 {
+                    text-align: left;
+                    font-size: 2rem;
+                    line-height: 48px;
+                    font-weight: bold;
+                    margin-bottom: 22px;
+                    margin-top: 0;
             }
 
-            @include breakpoint(large){
-                font-size: 0.875rem;
-                padding:16px 224px 18px 22px;
-                width: 480px;
+            p {
+                max-width: 500px;
+                margin: 0;
+                text-align: left;
+                font-size: 1rem;
+                line-height: 1.5;
+             
             }
-        }        
+
+         }
+
+        }   
     }
-
-    .formflex {       
-        display: flex;
-        flex-direction: column;
-    }      
+  
 }
-       
-          
 
+        
+}
+                 
+
+
+
+    
+            
+           
+            
+                
+   
       
+     
 
 
-
-
-
-
+    
+           
+              
+    
+        
+               
