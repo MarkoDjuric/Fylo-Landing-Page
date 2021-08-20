@@ -32,42 +32,45 @@
         }
     }
             
-    
-    .slika {
+  
+   .slika {
         max-width: 20rem;
         order: 1;
         position: relative;
         background-color: hsl(240, 75%, 98%);
+        
 
-        @include breakpoint(large) {
-              max-width: 21.25rem;
+        @include breakpoint(medium) {
+            min-width: 26.25rem;
          }
 
-            img {
-                max-width: 320px;
+      img {
+          max-width: 320px;
+          width: 100%;
+          
+             @include breakpoint(medium) {
+                max-width: 26rem;
                 width: 100%;
-
-          @include breakpoint(medium) {
-            max-width: 400px;
-            width: 100%;
-          }
+              }
         }
     }
 
       .slika {
 
-    @include breakpoint(large) {
-        max-width: 540px;
-     }
+          @include breakpoint(large) {
+              max-width: 540px;
+          }
 
-    img {
+          img {
 
-        @include breakpoint(large) {
-            width:100%;
-            max-width: 540px;
-        }
-     }
-  }  
+              @include breakpoint(large) {
+                  width:100%;
+                  max-width: 540px;
+              }
+
+          }
+      }   
+ 
 
                    
         .quote {
