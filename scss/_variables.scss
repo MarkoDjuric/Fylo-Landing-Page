@@ -1,6 +1,6 @@
 
 //HEADER
-$headLinks:#1d177d; 
+$headLinks:hsl(243, 87%, 12%); 
  
  // HERO SECTION
  $btn: 	hsl(224, 93%, 58%);              //#2f65f8
@@ -29,9 +29,9 @@ $headLinks:#1d177d;
  // Breakpoints
 $breakpoints: (
     xsmall: 320px,
-    small: 690px,
-    medium: 940px,
-    large: 1192px,
+    small: 499px,
+    medium: 900px,
+    large: 1146px,
     mega: 1282px,
     xlarge: 1399px
 );
