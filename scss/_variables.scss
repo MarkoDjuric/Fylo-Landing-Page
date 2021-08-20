@@ -25,7 +25,6 @@ $headLinks:hsl(243, 87%, 12%);
  $font-title: 'Raleway', sans-serif;
  $font-body: 'Open Sans', sans-serif;
  
-
  // Breakpoints
 $breakpoints: (
     xsmall: 320px,
@@ -35,6 +34,7 @@ $breakpoints: (
     mega: 1282px,
     xlarge: 1439px
 );
+
    
 @mixin breakpoint($size){
     $breakpoint-value: map-get($breakpoints, $size);
