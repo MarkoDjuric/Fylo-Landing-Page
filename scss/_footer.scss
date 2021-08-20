@@ -8,24 +8,14 @@
     font-size: 1rem;
     max-height: 590px;
 
-   
-
-
     @include breakpoint(large) {
         .footer {
             max-height: 391px;
-           
-        }
+         }
     }
 
-
-
-
 &__grid {
-    max-width: 1328px;
-    // display: grid;
-    // grid-template-columns: 1fr;
-    // grid-template-areas: "logo" "phone" "";
+    max-width: 1360px;
     padding-right: 27px;
     padding-left: 39px;
     display: flex;
@@ -35,33 +25,35 @@
 
 
     @include breakpoint(medium) {
- 
-        // grid-template-columns: repeat(5, 1fr);
-        // grid-template-rows: repeat(2, 1fr);
-        padding-left: 80px;
-        padding-right: 80px;
+        padding-left: 52px;
+        padding-right: 70px;
         flex-direction: column;
         padding-top: 92px;
 
         .flex_footer {
-           
             max-width: 1090px;
             display: flex;
             flex-direction: row;
             justify-content:space-between;
-           
-            
-          
+        }  
+        
+     }
+    
+        @include breakpoint(large) {
+            padding-left: 40px;
+            padding-top: 109px;
+            padding-bottom: 48px:
         }
-
-
-      
+    
+    @include breakpoint(xlarge) {
+        padding-left: 40px;
+       
     }
-}   
+}  
+                  
 .footer__logo {
     margin-bottom: 32px;
-    
-}
+ }
 
 .contact_devices {
     max-width: 222px;
@@ -92,42 +84,36 @@
     }
   }
 
-
 .footer__logo {
     max-width: 110px;
+    margin-bottom: 20px;
 }
 
 .footer__social {
-    
-    display: flex;
+     display: flex;
     justify-content: center;
-    svg {
-        padding-right: 9px;
-        
-    }
     
+    svg {
+      padding-right: 9px;
+    }
+  
 }
        
 &__logo {
     fill: #FFF;
     cursor: pointer;
-
-    @include breakpoint (large) {
-     
-    } 
 }
 
 &__text  {
+    
     a {
-   color: white;
-   font-size: 1rem;
+       color: white;
+       font-size: 1rem;
     }
-   
-}
+ }
 
 &__links1 {
-    font-size: 1rem;
-
+   font-size: 1rem;
 }
 
 &__social {
@@ -135,10 +121,15 @@
         height:28px;
         cursor: pointer;
         margin-bottom: 42px;
-        
-    }   
+      }   
 }
-
+    
+    #fylologo {
+        @include breakpoint (large) {
+            width: 171px;
+            height: 50px;
+         }   
+    }   
 }
  
 
