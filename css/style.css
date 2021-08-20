@@ -1,27 +1,26 @@
 html {
-  font-size: 100%; }
+  font-size: 100%;
+  scroll-behavior: smooth; }
 
 *, *:after, *:before {
   box-sizing: border-box; }
 
 body {
   font-family: "Open Sans", sans-serif;
-  font-size: calc(1rem + 0.75vw);
-  line-height: 1.3;
   margin: 0;
   padding: 0; }
 
 a {
   text-decoration: none;
   font-size: 0.75rem; }
-  @media screen and (min-width: 1192px) {
+  @media screen and (min-width: 1290px) {
     a {
       font-size: 1rem; } }
 
 h1 {
   font-size: 2rem;
   font-family: "Raleway", sans-serif; }
-  @media screen and (min-width: 1192px) {
+  @media screen and (min-width: 1290px) {
     h1 {
       font-size: 2rem; } }
   @media screen and (min-width: 1282px) {
@@ -40,82 +39,118 @@ p {
   max-width: 1440px;
   margin: 0 auto; }
 
+.logo {
+  font-size: calc(1rem + 0.75vw); }
+
+@media screen and (min-width: 900px) {
+  #signup-form {
+    display: flex;
+    align-items: center;
+    gap: 10px; } }
+
+@media screen and (min-width: 1290px) {
+  #signup-form {
+    display: flex; } }
+
 #mail {
   width: 100%;
+  border-color: #07043B;
   width: 304px;
   height: 40px;
   font-size: 14px;
   margin-bottom: 16px;
-  border-radius: 4px; }
-  @media screen and (min-width: 940px) {
+  padding-top: 25px;
+  border-radius: 4px;
+  border: 1px solid; }
+  @media screen and (min-width: 900px) {
     #mail {
-      width: 15.5rem;
+      width: 16.5rem;
       height: 37px; } }
-  @media screen and (min-width: 1192px) {
+  @media screen and (min-width: 1290px) {
     #mail {
+      flex: 0 0 320px;
       width: 320px;
       height: 45px;
-      margin-right: 16px; } }
+      margin-top: 14px;
+      margin-right: 16px;
+      flex-shrink: 2; } }
 
 .button {
   border: none;
   cursor: pointer;
   text-decoration: none;
+  height: 40px;
   padding: 12px 113px;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
   font-size: 0.875rem;
   background-color: #3065f8;
   color: #fff;
   border-radius: 4px; }
-  @media screen and (min-width: 940px) {
+  @media screen and (min-width: 900px) {
     .button {
-      padding: 10px 30px; } }
-  @media screen and (min-width: 1192px) {
+      padding: 10px 30px;
+      align-self: flex-start;
+      margin-left: 0; } }
+  @media screen and (min-width: 1290px) {
     .button {
-      padding: 15px 61px; } }
+      width: 200px;
+      height: 45px;
+      padding-top: 25px 61px;
+      align-self: center; }
+      .button .flexbtn {
+        flex-basis: 200px;
+        flex-shrink: 2; } }
 
 .footer a {
   color: white; }
 
 .footer a:hover {
-  color: #6b9aff; }
+  color: #6b9aff;
+  transform: scale(1.1); }
 
 .footer svg:hover path {
   transform: rotateX(150deg); }
 
 #mail:focus {
-  border: 2px solid red; }
+  border: 1px solid red; }
 
 header .nav {
-  max-width: 1340px;
   display: grid;
+  max-width: 1500px;
   grid-template-columns: minmax(110px, 1fr) repeat(3, auto);
   grid-gap: 25px;
   align-items: center;
-  padding: 24px 25px 98px 25px; }
+  padding: 24px 24px 98px 24px; }
   header .nav a {
     color: #1d177d; }
- @media screen and (min-width: 940px) {
+  @media screen and (min-width: 900px) {
     header .nav {
       padding-left: 50px;
-      padding-right: 50px; } }
+      padding-right: 50px; }
       header .nav a {
         font-size: 0.875rem; } }
-  @media screen and (min-width: 1192px) {
+  @media screen and (min-width: 1290px) {
     header .nav {
+      padding-top: 65px;
+      padding-bottom: 89px;
       padding-left: 80px;
-      padding-right: 80px; 
-      grid-gap: 40px;} }
+      padding-right: 80px;
+      grid-gap: 57px; }
+      header .nav a {
+        font-size: 1rem;
+        line-height: auto; } }
 
 header img {
   width: 4.5em; }
   @media screen and (min-width: 690px) {
     header img {
       width: 4.9em; } }
-  @media screen and (min-width: 940px) {
+  @media screen and (min-width: 900px) {
     header img {
       width: 5.5em; } }
 
-@media screen and (min-width: 1192px) {
+@media screen and (min-width: 1290px) {
   header {
     grid-gap: 58px; }
     header img {
@@ -127,10 +162,9 @@ header a {
 header a:hover {
   text-decoration: underline; }
 
-
 .hero .grid {
   display: flex;
-  max-width: 1340px;
+  max-width: 1500px;
   flex-direction: column;
   align-items: center;
   padding-right: 27px;
@@ -138,7 +172,7 @@ header a:hover {
   padding-bottom: 90px;
   text-align: center;
   color: #070439; }
-  @media screen and (min-width: 940px) {
+  @media screen and (min-width: 900px) {
     .hero .grid {
       padding-right: 52px;
       padding-left: 52px;
@@ -152,23 +186,29 @@ header a:hover {
   .hero .grid h1 {
     font-size: 1.5rem;
     font-family: 'Open Sans';
-    font-weight: bold; }
-    @media screen and (min-width: 940px) {
+    font-weight: bold;
+    margin: 0; }
+    @media screen and (min-width: 900px) {
       .hero .grid h1 {
         font-size: 1.7rem; } }
-  @media screen and (min-width: 1192px) {
+  @media screen and (min-width: 1290px) {
     .hero .grid {
       flex-direction: row;
       justify-content: space-between;
       text-align: left;
-      gap: 0.902vw;
       padding-left: 80px;
-      padding-right: 80px; }
+      padding-right: 80px;
+      padding-bottom: 234px; }
       .hero .grid h1 {
-        font-size: 2.2rem; } }
-    @media screen and (min-width: 1192px) and (min-width: 1399px) {
-   in-width   .hero .grid h1 {
-        font-size: 2.5rem; } }
+        font-family: "Raleway", sans-serif;
+        font-size: 2.2rem;
+        padding-top: -50px;
+        line-height: 60px; } }
+    @media screen and (min-width: 1290px) and (min-width: 1439px) {
+      .hero .grid h1 {
+        max-width: 627px;
+        font-size: 2.5rem;
+        line-height: 60px; } }
   .hero .grid .about {
     max-width: 320px;
     order: 1; }
@@ -176,8 +216,8 @@ header a:hover {
       min-width: 296px;
       text-align: center;
       font-size: 0.875rem; }
-      @media screen and (min-width: 940px) {
-            .hero .grid .about p {
+      @media screen and (min-width: 900px) {
+        .hero .grid .about p {
           text-align: left;
           font-size: 1rem; } }
   .hero .grid .image {
@@ -186,7 +226,7 @@ header a:hover {
       .hero .grid .image {
         width: 100%;
         max-width: 450px; } }
-    @media screen and (min-width: 940px) {
+    @media screen and (min-width: 900px) {
       .hero .grid .image {
         min-width: 21.25rem; } }
     .hero .grid .image img {
@@ -196,55 +236,56 @@ header a:hover {
         .hero .grid .image img {
           width: 100%;
           max-width: 450px; } }
-      @media screen and (min-width: 940px) {
+      @media screen and (min-width: 900px) {
         .hero .grid .image img {
-          max-width: 21.25rem;
+          max-width: 31.25rem;
           width: 100%; } }
-  @media screen and (min-width: 1192px) {
+  @media screen and (min-width: 1290px) {
     .hero .grid .image {
-      width: 640px;
+      width: 100%;
+      max-width: 640px;
       order: 1; }
       .hero .grid .image img {
         width: 100%;
-        max-width: 640px;
-        margin-top: 50px; }
+        max-width: 640px; }
     .hero .grid .about {
-      max-width: 627px; }
+      max-width: 627px;
+      margin-top: -40px; }
       .hero .grid .about p {
         font-size: 1.063rem;
         width: 585px;
         line-height: 24px;
         text-align: left;
-        letter-spacing: 0.53px; } }
-    @media screen and (min-width: 1192px) and (min-width: 1399px) {
+        letter-spacing: 0.53px;
+        margin: 15px 0; } }
+    @media screen and (min-width: 1290px) and (min-width: 1439px) {
       .hero .grid .about p {
         font-size: 1.063rem; } }
 
 .productive .flex {
   display: flex;
-  max-width: 1340px;
+  max-width: 1360px;
   flex-direction: column;
   padding-right: 27px;
   padding-left: 27px;
   align-items: center;
   text-align: center;
   color: #070439;
-  margin-bottom: 111px; }
-  @media screen and (min-width: 940px) {
+  margin-bottom: 81px; }
+  @media screen and (min-width: 900px) {
     .productive .flex {
       padding-right: 52px;
       padding-left: 52px;
       flex-direction: row;
       justify-content: space-between; } }
-  @media screen and (min-width: 1192px) {
+  @media screen and (min-width: 1290px) {
     .productive .flex {
       flex-direction: row;
-      justify-content: space-between;
       text-align: left;
       padding-top: 70px;
-      padding-left: 80px;
-      padding-right: 80px;
-      margin-bottom: 111px;
+      padding-left: 40px;
+      padding-right: 40px;
+      margin-bottom: 126px;
       gap: 15rem; } }
 
 .productive .slika {
@@ -252,22 +293,22 @@ header a:hover {
   order: 1;
   position: relative;
   background-color: #f6f6fe; }
-  @media screen and (min-width: 940px) {
+  @media screen and (min-width: 900px) {
     .productive .slika {
-      max-width: 21.25rem; } }
+      min-width: 26.25rem; } }
   .productive .slika img {
     max-width: 320px;
     width: 100%; }
-    @media screen and (min-width: 940px) {
+    @media screen and (min-width: 900px) {
       .productive .slika img {
-        max-width: 400px;
+        max-width: 26rem;
         width: 100%; } }
 
-@media screen and (min-width: 1192px) {
+@media screen and (min-width: 1290px) {
   .productive .slika {
     max-width: 540px; } }
 
-@media screen and (min-width: 1192px) {
+@media screen and (min-width: 1290px) {
   .productive .slika img {
     width: 100%;
     max-width: 540px; } }
@@ -283,49 +324,50 @@ header a:hover {
   padding-bottom: 9px;
   padding-right: 12px;
   padding-left: 26px;
-  margin-top: 40px;
+  margin-top: 28px;
   color: #070439;
   text-align: left;
   transition: width 2s, height 2s, transform 2s; }
-  @media screen and (min-width: 940px) {
+  @media screen and (min-width: 900px) {
     .productive .quote {
       margin-left: 0; } }
-  .productive .quote .quote__image {
-    width: 100%;
-    max-width: 14px; }
-  @media screen and (min-width: 1192px) {
+  @media screen and (min-width: 1290px) {
     .productive .quote {
       width: 356px;
-      min-height: 220px;
-      padding-top: 12px;
+      max-height: 215px;
+      padding-top: 45.48px;
       padding-right: 34px;
-      padding-left: 34px;
-      padding-bottom: 26px; } }
+      padding-left: 33px;
+      padding-bottom: 69.23px; } }
+  .productive .quote .quote__image {
+    width: 100%;
+    width: 16px; }
   .productive .quote .citat {
     font-size: 0.625rem;
     line-height: 18px; }
-    @media screen and (min-width: 1192px) {
+    @media screen and (min-width: 1290px) {
       .productive .quote .citat {
         max-width: 289px;
-        font-size: 0.8125rem;
+        font-size: 13px;
         text-align: left;
         line-height: 23px;
-        padding-bottom: 14px;
+        padding-bottom: 16px;
+        letter-spacing: 0.5px;
         margin: 0; } }
   .productive .quote .position {
     font-size: 0.375rem; }
-    @media screen and (min-width: 1192px) {
+    @media screen and (min-width: 1290px) {
       .productive .quote .position {
         font-size: 0.5rem; } }
   .productive .quote .name {
     font-size: 0.5625rem;
     font-weight: bold; }
-    @media screen and (min-width: 1192px) {
+    @media screen and (min-width: 1290px) {
       .productive .quote .name {
         font-size: 0.6875rem; } }
   .productive .quote img {
     width: 24px; }
-    @media screen and (min-width: 1192px) {
+    @media screen and (min-width: 1290px) {
       .productive .quote img {
         width: 32px; } }
 
@@ -335,7 +377,7 @@ header a:hover {
 .productive .text {
   max-width: 320px;
   order: 2; }
-  @media screen and (min-width: 940px) {
+  @media screen and (min-width: 900px) {
     .productive .text {
       order: 1;
       text-align: left;
@@ -343,26 +385,28 @@ header a:hover {
   .productive .text p {
     font-size: 0.875rem;
     line-height: 21px; }
-    @media screen and (min-width: 940px) {
+    @media screen and (min-width: 900px) {
       .productive .text p {
         font-size: 0.9rem; } }
   .productive .text h1 {
     font-size: 1rem;
     margin-bottom: 1.5rem; }
-    @media screen and (min-width: 940px) {
+    @media screen and (min-width: 900px) {
       .productive .text h1 {
         font-size: 1.7rem; } }
-  @media screen and (min-width: 1192px) {
+  @media screen and (min-width: 1290px) {
     .productive .text {
       order: 1; }
       .productive .text h1 {
-        width: 649px;
-        font-size: 2.188rem;
-        margin-bottom: 2.375rem; }
+        width: 654px;
+        font-weight: bold;
+        font-size: 2.5rem;
+        margin-bottom: 36px; }
       .productive .text p {
         width: 529px;
         font-size: 1rem;
-        line-height: 24px; } }
+        line-height: 24px;
+        margin-top: 0; } }
   .productive .text a {
     background-image: url("/images/icon-arrow.svg");
     background-repeat: no-repeat;
@@ -376,27 +420,22 @@ header a:hover {
       color: #72dfcd;
       border-bottom: 1px solid #72dfcd; }
 
-.productive .quote {
-  max-width: 280px;
-  height: 170px; }
-  @media screen and (min-width: 1192px) {
-    .productive .quote {
-      max-width: 356px;
-      height: 170px; } }
-  .productive .quote__author {
-    display: grid;
-    grid-template-columns: 32px 1fr;
-    grid-template-rows: 16px 16px; }
-    .productive .quote__author p {
-      margin: 0;
-      padding-left: 8px; }
-    .productive .quote__author-image {
-      grid-column: 1 / span 1;
-      grid-row: 1 / span 2; }
-      .productive .quote__author-image img {
-        width: 100%;
-        height: auto;
-        border-radius: 50%; }
+.productive .quote__author {
+  display: grid;
+  grid-template-columns: 32px 1fr;
+  grid-template-rows: 16px 16px; }
+  .productive .quote__author p {
+    margin: 0;
+    padding-left: 8px; }
+  .productive .quote__author a {
+    margin-top: 3px; }
+  .productive .quote__author-image {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 2; }
+    .productive .quote__author-image img {
+      width: 100%;
+      height: auto;
+      border-radius: 50%; }
 
 .productive .slika::before {
   content: '';
@@ -414,7 +453,8 @@ header a:hover {
 .cta {
   background-color: #585989; }
   .cta__wrapper {
-    max-width: 1328px;
+    max-width: 1360px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     padding-right: 27px;
@@ -424,115 +464,133 @@ header a:hover {
     padding-top: 54px;
     padding-bottom: 71px;
     color: #fff; }
-    @media screen and (min-width: 940px) {
-      .cta__wrapper {
-        flex-direction: row;
-        justify-content: space-between; } }
-    @media screen and (min-width: 1192px) {
-      .cta__wrapper {
-        align-items: center;
-        padding-top: 100px;
-        padding-left: 80px;
-        padding-right: 80px;
-        padding-bottom: 80px; } }
-  .cta__text {
-    width: 280px;
-    text-align: center; }
-    @media screen and (min-width: 940px) {
-      .cta__text {
-        width: 400px;
-        text-align: left; } }
-    @media screen and (min-width: 1192px) {
-      .cta__text {
-        max-width: 533px;
-        text-align: left; } }
-    .cta__text h2 {
-      font-size: 1.125rem;
-      font-family: 'Raleway';
-      line-height: 24px;
-      margin: 0; }
-      @media screen and (min-width: 1192px) {
-        .cta__text h2 {
-          font-size: 2rem;
-          line-height: 48px;
-          font-weight: bold; } }
-    .cta__text p {
-      font-size: 0.875rem;
-      line-height: 21px;
-      width: 280px; }
-      @media screen and (min-width: 940px) {
-        .cta__text p {
-          width: 360px; } }
-      @media screen and (min-width: 1192px) {
-        .cta__text p {
-          width: 533px;
-          font-size: 1rem;
-          line-height: 24px;
-          letter-spacing: 0.5px; } }
-  .cta__input {
-    max-width: 240px; }
-    .cta__input:invalid {
-      border: 1px solid red; }
-    @media screen and (min-width: 940px) {
-      .cta__input {
-        max-width: 400px; } }
-    @media screen and (min-width: 1192px) {
-      .cta__input {
-        max-width: 480px; } }
-    .cta__input .button {
-      font-size: 0.625rem;
+    .cta__wrapper .button {
+      font-size: 12px;
       padding: 11px 70px 9px 70px;
       width: 240px;
       box-shadow: 20px 20px 20px #181029;
-      transition: all .2s; }
-      @media screen and (min-width: 940px) {
-        .cta__input .button {
-          font-size: 0.7rem;
-          padding: 9px 16px;
-          width: 200px; } }
-      .cta__input .button:hover {
-        background-color: #6b9aff; }
-      @media screen and (min-width: 1192px) {
-        .cta__input .button {
-          padding: 16px 22px;
-          font-size: 0.875rem;
-          width: 200px; } }
-    .cta__input #mail {
-      font-size: 0.625rem;
-      padding: 11px 102px 9px 8px;
+      transition: all .2s;
+      align-self: flex-start;
       height: 32px;
-      width: 240px;
+      margin-top: 16.09px; }
+      @media screen and (min-width: 690px) {
+        .cta__wrapper .button {
+          font-size: 13px;
+          height: 40px;
+          width: 300px; } }
+    .cta__wrapper p {
+      max-width: 280px;
+      font-size: 14px;
+      font-weight: normal; }
+      @media screen and (min-width: 690px) {
+        .cta__wrapper p {
+          max-width: 300px; } }
+    .cta__wrapper .formflex {
+      display: flex;
+      flex-direction: column; }
+    .cta__wrapper .cta_input {
+      height: 32px;
+      min-width: 240px;
+      margin-bottom: 8px;
+      border: none;
+      border-radius: 3px;
+      font-size: 12px;
       box-shadow: 20px 20px 20px #181029; }
-      @media screen and (min-width: 940px) {
-        .cta__input #mail {
-          width: 360px; } }
-      @media screen and (min-width: 1192px) {
-        .cta__input #mail {
-          font-size: 0.875rem;
-          padding: 16px 224px 18px 22px;
-          width: 480px; } }
-  .cta .formflex {
-    display: flex;
-    flex-direction: column; }
+      @media screen and (min-width: 690px) {
+        .cta__wrapper .cta_input {
+          font-size: 13px;
+          height: 40px;
+          width: 300px; } }
+    @media screen and (min-width: 900px) {
+      .cta__wrapper .cta__text p {
+        max-width: 400px;
+        text-align: left;
+        font-size: 15px; } }
+    @media screen and (min-width: 900px) {
+      .cta__wrapper {
+        flex-direction: row;
+        text-align: left;
+        justify-content: space-between;
+        padding-left: 52px;
+        padding-right: 110px;
+        gap: 10%; }
+        .cta__wrapper .cta__text {
+          width: 400px; }
+        .cta__wrapper .formflex {
+          padding-right: 40px;
+          padding-top: 12px; }
+          .cta__wrapper .formflex .cta_input {
+            height: 40px;
+            margin-bottom: 15px;
+            min-width: 382px;
+            border: none;
+            border-radius: 3px; }
+          .cta__wrapper .formflex .button {
+            align-self: unset;
+            width: 200px;
+            height: 48px;
+            padding: 13px; } }
+    @media screen and (min-width: 1290px) {
+      .cta__wrapper {
+        padding: 96px 40px 81px 40px; }
+        .cta__wrapper .inputwrap {
+          flex-basis: 50%;
+          max-width: unset;
+          padding-left: 170px; }
+        .cta__wrapper .formflex {
+          display: flex;
+          flex-direction: column;
+          margin: 0 auto;
+          padding-right: 40px;
+          padding-top: 1px; }
+          .cta__wrapper .formflex .cta_input {
+            height: 48px;
+            margin-bottom: 15px;
+            min-width: 482px;
+            border: none;
+            border-radius: 3px; }
+          .cta__wrapper .formflex .button {
+            align-self: unset;
+            padding: 16px 33px 16px 33px;
+            font-size: 14px;
+            margin-top: 1.09px; } }
+  @media screen and (min-width: 1290px) and (min-width: 1290px) {
+    .cta__wrapper {
+      flex-direction: row; }
+      .cta__wrapper .cta__text {
+        flex-basis: 50%; }
+        .cta__wrapper .cta__text h2 {
+          text-align: left;
+          font-size: 2rem;
+          line-height: 48px;
+          font-weight: bold;
+          margin-bottom: 22px;
+          margin-top: 0; }
+        .cta__wrapper .cta__text p {
+          max-width: 500px;
+          margin: 0;
+          text-align: left;
+          font-size: 1rem;
+          line-height: 1.5; } }
 
 .footer {
   background-color: #070439;
   font-size: 1rem;
   max-height: 590px; }
-  @media screen and (min-width: 1192px) {
+  @media screen and (min-width: 1290px) {
     .footer .footer {
       max-height: 391px; } }
   .footer__grid {
-    max-width: 1328px;
+    max-width: 1360px;
     padding-right: 27px;
     padding-left: 39px;
     display: flex;
     flex-direction: column;
     padding-top: 65px; }
-    @media screen and (min-width: 940px) {
+    @media screen and (min-width: 900px) {
       .footer__grid {
-        padding-left: 80px;
-        padding-right: 80px;
+        padding-left: 52px;
+        padding-right: 70px;
         flex-direction: column;
         padding-top: 92px; }
         .footer__grid .flex_footer {
@@ -540,6 +598,14 @@ header a:hover {
           display: flex;
           flex-direction: row;
           justify-content: space-between; } }
+    @media screen and (min-width: 1290px) {
+      .footer__grid {
+        padding-left: 40px;
+        padding-top: 109px;
+        padding-bottom: 48px; } }
+    @media screen and (min-width: 1439px) {
+      .footer__grid {
+        padding-left: 40px; } }
   .footer .footer__logo {
     margin-bottom: 32px; }
   .footer .contact_devices {
@@ -560,7 +626,8 @@ header a:hover {
       padding-bottom: 16px;
       font-size: 1rem; }
   .footer .footer__logo {
-    max-width: 110px; }
+    max-width: 110px;
+    margin-bottom: 20px; }
   .footer .footer__social {
     display: flex;
     justify-content: center; }
@@ -578,6 +645,7 @@ header a:hover {
     height: 28px;
     cursor: pointer;
     margin-bottom: 42px; }
-
-
-
+  @media screen and (min-width: 1290px) {
+    .footer #fylologo {
+      width: 171px;
+      height: 50px; } }
