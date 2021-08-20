@@ -1,10 +1,11 @@
 .cta {
-    background-color: $ctaBckgrnd;
+  
+     background-color: $ctaBckgrnd;
     
     &__wrapper {
         max-width: 1328px;
         display: flex;
-        gap:5%;
+        
         flex-direction: column;
         padding-right: 27px;
         padding-left: 27px;
@@ -14,11 +15,13 @@
         padding-bottom: 71px;
         color:#fff;
 
-        @include breakpoint(large) {
+        @include breakpoint(medium) {
             flex-direction: row;
-            justify-content: space-between;
+            justify-content: space-between;   
+        }
+
+        @include breakpoint(large) {
             align-items: center;
-     
             padding-top: 100px;
             padding-left: 80px;
             padding-right: 80px;
@@ -27,21 +30,22 @@
     }
 
     &__text {
-        max-width: 280px;
+        width: 280px;
         text-align: center;
+       
+        @include breakpoint(medium) {
+            width: 400px;
+            text-align: left;
+        }
 
         @include breakpoint(large){
             max-width: 533px;
             text-align: left;
         }
             
-           
-
-
         h2 {
-        
             font-size: 1.125rem;
-            font-family: Raleway;
+            font-family: 'Raleway';
             line-height: 24px;
             margin: 0;
 
@@ -51,15 +55,15 @@
                 line-height: 48px;
                 font-weight: bold;
             }
-           
-           
         }
-
-        p {
+                  
+       p {
             font-size:0.875rem;
             line-height: 21px;
             width: 280px;
-            
+            @include breakpoint(medium){
+                width: 360px;
+            }
 
             @include breakpoint(large){
                 width: 533px;
@@ -76,20 +80,25 @@
         &:invalid {
            border: 1px solid red;
         }
+        @include breakpoint(medium){
+            max-width: 400px;
+        }
         @include breakpoint(large){
             max-width: 480px;
-           
-            
         }
-
-
+    
         .button {
             font-size: 0.625rem;
             padding:11px 70px 9px 70px; 
             width: 240px;
             box-shadow: 20px 20px 20px rgb(24, 16, 41);
             transition: all .2s;
-          
+
+            @include breakpoint(medium){
+                font-size: 0.7rem;
+                padding: 9px 16px;
+                width: 200px;
+            }
             &:hover {
                 background-color:$btnHover;
             }
@@ -108,23 +117,23 @@
             height: 32px;
             width: 240px;
             box-shadow: 20px 20px 20px rgb(24, 16, 41);
+
+            @include breakpoint(medium){
+                width: 360px;
+            }
+
             @include breakpoint(large){
                 font-size: 0.875rem;
                 padding:16px 224px 18px 22px;
                 width: 480px;
             }
-
-
-        }
-        
+        }        
     }
 
-    .formflex {
-       
+    .formflex {       
         display: flex;
         flex-direction: column;
-    }
-
+    }      
 }
        
           
